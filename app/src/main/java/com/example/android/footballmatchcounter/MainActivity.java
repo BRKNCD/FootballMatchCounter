@@ -140,13 +140,10 @@ public class MainActivity extends AppCompatActivity {
 
         team1Point = 0;
         team2Point = 0;
-
         team1YellowCardsN = 0;
         team2YellowCardsN = 0;
-
         team1RedCardsN = 0;
         team2RedCardsN = 0;
-
         team1OffsideN = 0;
         team2OffsideN = 0;
 
