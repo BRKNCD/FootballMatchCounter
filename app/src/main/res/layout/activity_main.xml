@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.footballmatchcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/first_column"
+            style="@style/layout_team"
+            android:background="@drawable/layout_team1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/team1_name"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team1_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_team1"
+                android:gravity="center"
+                android:text="@string/initial_score"
+                android:textColor="@color/scoreColor"
+                android:textSize="64sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/team1_subtract_goal"
+                    style="@style/button_goal"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.5"
+                    android:onClick="team1GoalDenied"
+                    android:text="@string/team1_goal_denied" />
+
+                <Button
+                    android:id="@+id/team1_add_goal"
+                    style="@style/button_goal"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="team1Goal"
+                    android:text="@string/team1_goal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/team1_yellow_cards"
+                    style="@style/text_extra"
+                    android:textColor="@color/yellowCard" />
+
+                <TextView
+                    android:id="@+id/team1_red_cards"
+                    style="@style/text_extra"
+                    android:textColor="@color/redCard" />
+
+                <TextView
+                    android:id="@+id/team1_offside"
+                    style="@style/text_extra" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/team1_add_yellow_card"
+                style="@style/button_extra"
+                android:layout_marginTop="8dp"
+                android:onClick="team1YellowCard"
+                android:text="@string/team1_yellow_cards" />
+
+            <Button
+                android:id="@+id/team1_add_red_card"
+                style="@style/button_extra"
+                android:layout_marginTop="8dp"
+                android:onClick="team1RedCard"
+                android:text="@string/team1_red_cards" />
+
+            <Button
+                android:id="@+id/team1_add_offside"
+                style="@style/button_extra"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="team1Offside"
+                android:text="@string/team1_offside" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/second_column"
+            style="@style/layout_team"
+            android:background="@drawable/layout_team2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/team2_name"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team2_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_team2"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/scoreColor"
+                android:textSize="64sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/team2_subtract_goal"
+                    style="@style/button_goal"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.5"
+                    android:onClick="team2GoalDenied"
+                    android:text="@string/team2_goal_denied" />
+
+                <Button
+                    android:id="@+id/team2_add_goal"
+                    style="@style/button_goal"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="team2Goal"
+                    android:text="@string/team2_goal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/team2_yellow_cards"
+                    style="@style/text_extra"
+                    android:textColor="@color/yellowCard" />
+
+                <TextView
+                    android:id="@+id/team2_red_cards"
+                    style="@style/text_extra"
+                    android:textColor="@color/redCard" />
+
+                <TextView
+                    android:id="@+id/team2_offside"
+                    style="@style/text_extra" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/team2_add_yellow_card"
+                style="@style/button_extra"
+                android:layout_marginTop="8dp"
+                android:onClick="team2YellowCard"
+                android:text="@string/team1_yellow_cards" />
+
+            <Button
+                android:id="@+id/team2_add_red_card"
+                style="@style/button_extra"
+                android:layout_marginTop="8dp"
+                android:onClick="team2RedCard"
+                android:text="@string/team1_red_cards" />
+
+            <Button
+                android:id="@+id/team2_add_offside"
+                style="@style/button_extra"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="team2Offside"
+                android:text="@string/team1_offside" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        style="@style/button_extra"
+        android:layout_marginHorizontal="64dp"
+        android:layout_marginTop="32dp"
+        android:onClick="resetAll"
+        android:text="@string/reset"
+        android:textAllCaps="true" />
+
+</LinearLayout>

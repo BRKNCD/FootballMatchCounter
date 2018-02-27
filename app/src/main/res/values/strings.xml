@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Football Match Counter</string>
+    <string name="team1_name">Team 1</string>
+    <string name="team2_name">Team 2</string>
+    <string name="team1_goal"> + </string>
+    <string name="team2_goal"> + </string>
+    <string name="team1_goal_denied"> - </string>
+    <string name="team2_goal_denied"> - </string>
+    <string name="team1_yellow_cards">Yellow card</string>
+    <string name="team2_yellow_cards">Yellow card</string>
+    <string name="team1_red_cards">Red card</string>
+    <string name="team2_red_cards">Red card</string>
+    <string name="team1_offside">Offside</string>
+    <string name="team2_offside">Offside</string>
+    <string name="reset">reset</string>
+    <string name="initial_score">0</string>
+    <string name="team1_wins">TEAM 1 WINS!</string>
+    <string name="team2_wins">TEAM 2 WINS!</string>
+    <string name="draw">DRAW!</string>
+</resources>

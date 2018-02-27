@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#99BB00</color>
+    <color name="colorPrimaryDark">#AADD00</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="yellowCard">#FFFF00</color>
+    <color name="redCard">#FF1000</color>
+    <color name="scoreColor">#000000</color>
+
+</resources>
