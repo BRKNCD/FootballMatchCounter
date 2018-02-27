@@ -138,14 +138,26 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
 
-        resetViews(team1Score);
-        resetViews(team1YellowCards);
-        resetViews(team1RedCards);
-        resetViews(team1Offside);
-        resetViews(team2Score);
-        resetViews(team2YellowCards);
-        resetViews(team2RedCards);
-        resetViews(team2Offside);
+        team1Point = 0;
+        team2Point = 0;
+
+        team1YellowCardsN = 0;
+        team2YellowCardsN = 0;
+
+        team1RedCardsN = 0;
+        team2RedCardsN = 0;
+
+        team1OffsideN = 0;
+        team2OffsideN = 0;
+
+        resetViews(team1Score, team1Point);
+        resetViews(team1YellowCards, team1YellowCardsN);
+        resetViews(team1RedCards, team1RedCardsN);
+        resetViews(team1Offside, team1OffsideN);
+        resetViews(team2Score, team2Point);
+        resetViews(team2YellowCards, team2YellowCardsN);
+        resetViews(team2RedCards, team2RedCardsN);
+        resetViews(team2Offside, team2OffsideN);
     }
 
     public void team1AddingViews(TextView viewToAdd, int pointToAdd) {
@@ -168,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void resetViews(TextView viewToReset) {
-        viewToReset.setText("0");
+    public void resetViews(TextView viewToReset, int pointToReset) {
+        viewToReset.setText("" + pointToReset);
     }
 }
