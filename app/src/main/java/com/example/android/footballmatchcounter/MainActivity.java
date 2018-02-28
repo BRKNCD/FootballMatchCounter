@@ -9,37 +9,37 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView team1Score;
-    Button team1SubtractScore;
-    Button team1AddScore;
-    TextView team1YellowCards;
-    TextView team1RedCards;
-    TextView team1Offside;
-    Button team1AddYellowCards;
-    Button team1AddRedCards;
-    TextView team1AddOffside;
+    private TextView team1Score;
+    private Button team1SubtractScore;
+    private Button team1AddScore;
+    private TextView team1YellowCards;
+    private TextView team1RedCards;
+    private TextView team1Offside;
+    private Button team1AddYellowCards;
+    private Button team1AddRedCards;
+    private TextView team1AddOffside;
 
-    TextView team2Score;
-    Button team2SubtractScore;
-    Button team2AddScore;
-    TextView team2YellowCards;
-    TextView team2RedCards;
-    TextView team2Offside;
-    Button team2AddYellowCards;
-    Button team2AddRedCards;
-    TextView team2AddOffside;
+    private TextView team2Score;
+    private Button team2SubtractScore;
+    private Button team2AddScore;
+    private TextView team2YellowCards;
+    private TextView team2RedCards;
+    private TextView team2Offside;
+    private Button team2AddYellowCards;
+    private Button team2AddRedCards;
+    private TextView team2AddOffside;
 
-    int team1Point;
-    int team2Point;
+    private int team1Point;
+    private int team2Point;
 
-    int team1YellowCardsN;
-    int team2YellowCardsN;
+    private int team1YellowCardsN;
+    private int team2YellowCardsN;
 
-    int team1RedCardsN;
-    int team2RedCardsN;
+    private int team1RedCardsN;
+    private int team2RedCardsN;
 
-    int team1OffsideN;
-    int team2OffsideN;
+    private int team1OffsideN;
+    private int team2OffsideN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
